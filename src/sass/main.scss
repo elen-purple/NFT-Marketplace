@@ -1,0 +1,22 @@
+@import "./common/reset";
+
+@import "./utils/vars";
+@import "./utils/keyframes";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./common/base";
+@import "./common/container";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/scroll-to-top";
+
+@import "./sections/hero";
+@import "./sections/collection";
+@import "./sections/creators";
+@import "./sections/categories";
+@import "./sections/discover";
+@import "./sections/magic";
+@import "./sections/works";
+@import "./sections/join";

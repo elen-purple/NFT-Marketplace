@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    // outline: cyan 3px dashed;
+
+    @media screen and (min-width: 345px) {
+        width: 345px;
+    }
+
+    @media screen and (min-width: 720px) {
+        width: 720px;
+    }
+
+    @media screen and (min-width: 1080px) {
+        width: 1080px;
+    }
+}
