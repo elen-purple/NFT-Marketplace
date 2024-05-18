@@ -1,0 +1,212 @@
+.hero {
+    padding: 40px 0;
+
+    & .container {
+        position: relative;
+    }
+
+    &__textblock {
+        margin-bottom: 395px;
+    }
+
+    &__title {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.4;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &__numblock {}
+
+    &__button {
+        width: 100%;
+        padding: 19px 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        background-color: $accent;
+        border-radius: 20px;
+        margin-bottom: 40px;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.06);
+            box-shadow: 0 13px 12px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__icon {
+        fill: $text;
+    }
+
+    &__info {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        width: calc((100% - 60px) / 3);
+    }
+
+    &__num {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.6;
+        text-transform: capitalize;
+    }
+
+    &__size {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+
+    &__cardblock {
+        position: absolute;
+        top: 194px;
+        left: 15px;
+        background-color: $secondary-bg;
+        border-radius: 20px;
+        width: calc(100% - 30px);
+    }
+
+    &__img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: auto;
+    }
+
+    &__caption {
+        padding: 22px 20px;
+    }
+
+    &__subtitle {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.4;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+
+    &__avatarblock {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    &__avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    &__name {}
+}
+
+@media screen and (min-width: 720px) {
+    .hero {
+        padding: 80px 0;
+
+        &__textblock {
+            width: 330px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            font-size: 38px;
+            line-height: 1.2;
+            text-transform: capitalize;
+        }
+
+        &__cardblock {
+            width: 330px;
+            left: 375px;
+            top: 0;
+        }
+
+        &__numblock {
+            width: 330px;
+        }
+
+        &__button {
+            width: max-content;
+            padding: 19px 50px;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            width: 90px;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .hero {
+
+        &__textblock {
+            width: 510px;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 67px;
+            line-height: 1.1;
+        }
+
+        &__desc {
+            font-size: 22px;
+            line-height: 1.6;
+            text-transform: capitalize;
+        }
+
+        &__numblock {
+            width: 510px;
+        }
+
+        &__button {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            width: 150px;
+        }
+
+        &__num {
+            font-size: 28px;
+            line-height: 1.4;
+        }
+
+        &__size {
+            font-size: 23px;
+            line-height: 1.6;
+            text-transform: capitalize;
+        }
+
+        &__cardblock {
+            width: 510px;
+            left: 555px;
+        }
+
+    }
+}
